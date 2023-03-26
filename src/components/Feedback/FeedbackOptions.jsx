@@ -1,11 +1,12 @@
 import React from 'react';
+import { Buttons } from './FeedbackOptions.styled';
 
 export const FeedbackOptions = ({ options, onLeaveFeedback }) => {
   return (
     <div>
       {options.map(option => {
         return (
-          <button
+          <Buttons
             type="button"
             key={option}
             onClick={() => {
@@ -13,7 +14,7 @@ export const FeedbackOptions = ({ options, onLeaveFeedback }) => {
             }}
           >
             {option}
-          </button>
+          </Buttons>
         );
       })}
     </div>
